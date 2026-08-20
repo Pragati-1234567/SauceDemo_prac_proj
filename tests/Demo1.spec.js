@@ -11,4 +11,7 @@ test("Login sauce Demo", async ({page}) =>{
     await page.getByText("Login").click();
 
     await page.waitForTimeout(4000);
+
+    await page.title();
+
 })
